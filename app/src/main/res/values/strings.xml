@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">TestPeopleApp</string>
+    <string name="refresh">Refresh</string>
+    <string name="list_of_friends">List of friends:</string>
+    <string name="error_message_activity_not_found">Your device doesn\'t support this action</string>
+    <string name="eye_color">Eye color:</string>
+    <string name="favorite_fruit">Favorite fruit:</string>
+    <string name="user_name">Name: %1$s</string>
+    <string name="user_age">Age: %1$s</string>
+    <string name="user_company">Company: %1$s</string>
+    <string name="user_email">Email: %1$s</string>
+    <string name="user_phone">Phone number: %1$s</string>
+    <string name="user_address">Address: %1$s</string>
+    <string name="user_about">About: %1$s</string>
+    <string name="user_date">Registration date: %1$s</string>
+    <string name="user_coordinates">Coordinates: %1$s</string>
+    <string name="error_message">Could not load data</string>
 </resources>

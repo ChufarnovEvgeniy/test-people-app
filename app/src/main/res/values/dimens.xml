@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_margin">8dp</dimen>
+    <dimen name="active_image_size">25dp</dimen>
+    <dimen name="large_text_size">24sp</dimen>
+    <dimen name="medium_text_size">16sp</dimen>
+    <dimen name="fruit_image_size">50dp</dimen>
+    <dimen name="eye_color_dot_image_size">25dp</dimen>
+</resources>

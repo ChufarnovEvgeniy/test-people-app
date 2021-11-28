@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/name_text_view"
+        style="@style/user_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/age_text_view"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Name: Aisha Velasquez" />
+
+    <TextView
+        android:id="@+id/age_text_view"
+        style="@style/user_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/company_text_view"
+        app:layout_constraintTop_toBottomOf="@id/name_text_view"
+        tools:text="Age: 37" />
+
+    <TextView
+        android:id="@+id/company_text_view"
+        style="@style/user_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/email_text_view"
+        app:layout_constraintTop_toBottomOf="@id/age_text_view"
+        tools:text="Company: BUGSALL" />
+
+    <TextView
+        android:id="@+id/email_text_view"
+        style="@style/user_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/phone_text_view"
+        app:layout_constraintTop_toBottomOf="@id/company_text_view"
+        tools:text="Email: aishavelasquez@bugsall.com" />
+
+    <TextView
+        android:id="@+id/phone_text_view"
+        style="@style/user_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/address_text_view"
+        app:layout_constraintTop_toBottomOf="@id/email_text_view"
+        tools:text="Phone: +1 (906) 447-2711" />
+
+    <TextView
+        android:id="@+id/address_text_view"
+        style="@style/user_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/about_text_view"
+        app:layout_constraintTop_toBottomOf="@id/phone_text_view"
+        tools:text="Address: 176 Tehama Street, Durham, Connecticut, 3324" />
+
+    <TextView
+        android:id="@+id/about_text_view"
+        style="@style/user_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/eye_color_text_view"
+        app:layout_constraintTop_toBottomOf="@id/address_text_view"
+        tools:text="About: Eu Lorem commodo nisi exercitation dolore." />
+
+    <TextView
+        android:id="@+id/eye_color_text_view"
+        style="@style/user_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/eye_color"
+        app:layout_constraintBottom_toTopOf="@id/favorite_fruit_text_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/about_text_view" />
+
+    <ImageView
+        android:id="@+id/eye_color_image_view"
+        android:layout_width="@dimen/eye_color_dot_image_size"
+        android:layout_height="@dimen/eye_color_dot_image_size"
+        android:layout_margin="@dimen/main_margin"
+        app:layout_constraintBottom_toBottomOf="@id/eye_color_text_view"
+        app:layout_constraintStart_toEndOf="@id/eye_color_text_view"
+        app:layout_constraintTop_toTopOf="@id/eye_color_text_view"
+        app:srcCompat="@drawable/ic_eye_color_dot"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/favorite_fruit_text_view"
+        style="@style/user_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/favorite_fruit"
+        app:layout_constraintBottom_toTopOf="@id/registered_text_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eye_color_text_view" />
+
+    <ImageView
+        android:id="@+id/favorite_fruit_image_view"
+        android:layout_width="@dimen/fruit_image_size"
+        android:layout_height="@dimen/fruit_image_size"
+        android:layout_margin="@dimen/main_margin"
+        app:layout_constraintBottom_toBottomOf="@id/favorite_fruit_text_view"
+        app:layout_constraintStart_toEndOf="@id/favorite_fruit_text_view"
+        app:layout_constraintTop_toTopOf="@id/favorite_fruit_text_view"
+        tools:srcCompat="@drawable/ic_unknown" />
+
+    <TextView
+        android:id="@+id/registered_text_view"
+        style="@style/user_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/coordinates_text_view"
+        app:layout_constraintTop_toBottomOf="@id/favorite_fruit_text_view"
+        tools:text="Registered: " />
+
+    <TextView
+        android:id="@+id/coordinates_text_view"
+        style="@style/user_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/friends_text_view"
+        app:layout_constraintTop_toBottomOf="@id/registered_text_view"
+        tools:text="Coordinates: " />
+
+    <TextView
+        android:id="@+id/friends_text_view"
+        style="@style/user_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/list_of_friends"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/coordinates_text_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>
